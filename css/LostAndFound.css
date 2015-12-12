@@ -1,0 +1,9 @@
+/* Move content down on open menu */
+.navbar-fixed-top, .navbar-fixed-bottom {
+  position: relative;
+}
+
+#content {
+	padding-left: 10px;
+	padding-right: 10px;
+}
