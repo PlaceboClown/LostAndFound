@@ -3,6 +3,11 @@
   position: relative;
 }
 
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 #content {
 	padding-left: 10px;
 	padding-right: 10px;
@@ -33,3 +38,12 @@
     margin-top: 0px !important;
     margin-bottom: 0px !important;
   }
+
+.report_title {
+    font-size: large;
+    font-weight: bold;
+}
+
+.report_details_buffer {
+    margin-top: 10px;
+}

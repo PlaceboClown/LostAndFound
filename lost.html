@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>LostAndFound</title>
+
+    <!-- Custom styles -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/LostAndFound.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header-->
+        <div class="header">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div id="divContainer" class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarContent">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand navbar-left" href="./index.html">
+						Lost&amp;Found
+					</a>
+                    </div>
+                    <div id="navbarContent" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="Profile.html">Change Profile</a></li>
+                            <li class="active"><a href="Login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <!-- Search & Filter Options -->
+        <div class="search well well-sm">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div id="lost_kategorie_dropdown" class="dropdown">
+                        <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                            Kategorie <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Handy</a></li>
+                            <li><a href="#">Kleidung</a></li>
+                            <li><a href="#">Accessoires</a></li>
+                            <li><a href="#">Sonstiges</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div id="lost_filter_dropdown" class="dropdown">
+                        <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                            Filter <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Neueste</a></li>
+                            <li><a href="#">Älteste</a></li>
+                            <li><a href="#">Abgeholt</a></li>
+                            <li><a href="#">Vorhanden</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content well well-lg">
+            <!-- Erster Gegenstand -->
+            <div class="row">
+                <p class="report_title text-center">Gefundene braune Jacke</p>
+            </div>
+            <div class="row">
+                <img class="img-responsive img-thumbnail" src="thumbs/found_jacket.jpg">
+            </div>
+            <div class="row report_details_buffer">
+                <span><strong>Gefunden am:</strong> 14.12.2015</span>
+            </div>
+            <div class="row report_details_buffer">
+                <span><strong>Beschreibung:</strong></span>
+                <p>Es handelt sich um eine braune Jacke von der Marke Powerfix und ist Größe 60. Sie lag am Boden in der nähe von den Toiletten. Sie gehört vermutlich einem größeren Herren.</p>
+            </div>
+            <button type="button" class="btn btn-primary btn-block report_details_buffer">Abholen!</button>
+        </div>
+        <div class="content well well-lg">
+            <!-- Zweiter Gegenstand -->
+            <div class="row">
+                <p class="report_title text-center">Gefundene braune Geldbörse</p>
+            </div>
+            <div class="row">
+                <img class="img-responsive img-thumbnail" src="thumbs/found_wallet.jpg">
+            </div>
+            <div class="row report_details_buffer">
+                <span><strong>Gefunden am:</strong> 13.12.2015</span>
+            </div>
+            <div class="row report_details_buffer">
+                <span><strong>Beschreibung:</strong></span>
+                <p>Es handelt sich um eine braune Geldbörse von der mir die Marke leider unbekannt ist. In ihr befinden sich 130 Euro Bargeld aber leider kein Ausweis oder sonstige Kontaktinformationen. Ich habe sie in der Nähe des Parkplatzes am Boden gefunden.</p>
+            </div>
+            <button type="button" class="btn btn-primary btn-block report_details_buffer">Abholen!</button>
+        </div>
+        <div class="content well well-lg">
+            <!-- Dritter Gegenstand -->
+            <div class="row">
+                <p class="report_title text-center">Gefundene Autoschlüssel von einem Seat</p>
+            </div>
+            <div class="row">
+                <img class="img-responsive img-thumbnail" src="thumbs/found_wallet.jpg">
+            </div>
+            <div class="row report_details_buffer">
+                <span><strong>Gefunden am:</strong> 13.12.2015</span>
+            </div>
+            <div class="row report_details_buffer">
+                <span><strong>Beschreibung:</strong></span>
+                <p>Es handelt sich um einen Autoschlüssel für einen Seat. Der Schlüssel lag am Ausgang des Parkplatzes.</p>
+            </div>
+            <button type="button" class="btn btn-primary btn-block report_details_buffer">Abholen!</button>
+        </div>
+        <div class="content well well-lg">
+            <!-- Vierter Gegenstand -->
+            <div class="row">
+                <p class="report_title text-center">Gefundene schwarze Uhr</p>
+            </div>
+            <div class="row">
+                <img class="img-responsive img-thumbnail" src="thumbs/found_watch.jpg">
+            </div>
+            <div class="row report_details_buffer">
+                <span><strong>Gefunden am:</strong> 13.12.2015</span>
+            </div>
+            <div class="row report_details_buffer">
+                <span><strong>Beschreibung:</strong></span>
+                <p>Es handelt sich um eine schwarze keramik Uhr von der Marke Diesel.</p>
+            </div>
+            <button type="button" class="btn btn-primary btn-block report_details_buffer">Abholen!</button>
+        </div>
+    </div>
+    <!-- Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
