@@ -55,10 +55,18 @@
                 <span><strong>Description:</strong></span>
                 <p>This is a car key for a seat. The key was at the exit of the parking lot.</p>
             </div>
-            <button type="button" class="btn btn-primary btn-block top_buffer" data-toggle="modal" data-target="#myModal">Claim!</button>
+            <div class="row">
+                <div class="col-xs-8">
+                    <button type="button" class="btn btn-primary btn-block top_buffer" data-toggle="modal" data-target="#claimModal">Claim!</button>
+                </div>
+                <div class="col-xs-4">
+                    <button type="button" class="btn btn-primary btn-block top_buffer" data-toggle="modal" data-target="#reportModal">
+                        <span class="glyphicon glyphicon-flag"></span> Report</button>
+                </div>
+            </div>
 
-            <!-- Modal -->
-            <div id="myModal" class="modal fade" role="dialog">
+            <!-- Modal for claiming an item -->
+            <div id="claimModal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
 
                     <!-- Modal content-->
@@ -78,7 +86,40 @@
                 </div>
             </div>
 
+            <!-- Modal for reporting this entry -->
+            <div id="reportModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
 
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Report</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="usrname">Reason: </label>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">This was my lost item</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Inappropiate content</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Spam</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="submit" class="btn btn-default btn-success btn-block" data-dismiss="modal">
+                               <span class="glyphicon glyphicon-send"></span> Send</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 
