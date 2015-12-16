@@ -43,6 +43,10 @@
     margin-top: 10px;
 }
 
+.top_buffer_home {
+    margin-top: 300px;
+}
+
 .logo {
     height: 30px;
     position: relative;
@@ -87,49 +91,121 @@ body::-webkit-scrollbar-thumb {
 }
 
 a {
-    color: #347A7D;
+    color: #d61d25;
 }
 
 a:hover {
-    color: #194345;
+    color: #a01d23;
+	text-decoration: none !important;
 }
 
+/* Primary buttons */
 .btn-primary {
-    background-color: #347A7D;
-    border-color: #4E8C8F;
+    background-color: #d61d25;
+    border-color: #fff;
     color: #fff;
 }
 
+/* Primary button on mouseover */
 .btn-primary:hover {
-    background-color: #194345;
-    border-color: #2D5254;
+    background-color: #a01d23;
+	border-color: #fff !important;
     color: #fff;
 }
 
+/* Primary button on mousedown */
+.btn-primary:active {
+    background-color: #a01d23 !important;
+    color: #fff;
+}
+
+/* Login symbols border */
 .input-group-addon {
-    border: 1px solid #4E8C8F;
+    border: 1px solid #999;
 }
 
+/* Input fields */
 .form-control {
-    border: 1px solid #4E8C8F;
+    border: 1px solid #aaa;
 }
 
-.img-thumbnail {
-    border: 1px solid #4E8C8F;
+/* Inputs fields when selected */
+.form-control:focus {
+    border: 1px solid #d61d25 !important;
+	box-shadow: 0px 0px 3px #d61d25 !important;
 }
+
+/* Image borders */
+.img-thumbnail {
+    border: 1px solid #aaa;
+}
+
+
 
 .navbar-default {
-    background-color: #6CA2A4;
-    border-color: #4E8C8F;
+	/* Gradient Navigation */
+    background: linear-gradient(to bottom, #ffffff 0%, #dbdbdb 100%);
+    border-color: #dbdbdb;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    background-color: #4E8C8F;
-    color: #0A2E1F;
+    /* Background color of navigation item */
+	background-color: transparent;
+	/* Text color of navigation item */
+    color: #000;
 }
+
 
 .well {
-    background-color: #94BFC1;
-    border: 1px solid #4E8C8F;
+	/* Background color content box */
+    background-color: #eee;
+	
+	/* Border of content box */
+    border: 1px solid #999;
 }
 
+.home-background {
+	background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#home-headline-container {
+	text-align: center;
+}
+
+#home-headline-main {
+	color: #fff;
+	font-size: 23px;
+	font-weight: lighter;
+	text-shadow: 0px 0px 3px #000;
+	font-family: 'Roboto', Arial;
+}
+
+#home-headline-sub {
+	color: #fff;
+	font-size: 16px;
+	font-weight: lighter;
+	text-shadow: 0px 0px 3px #000;
+	font-family: 'Roboto', Arial;
+}
+
+/* Fixes background resizing in index.html */
+@media (max-width: 979px) {
+  .navbar-fixed-top.navbar-absolute {
+    position: absolute;
+    margin: 0;
+  }
+}
+
+.navbar-absolute + div {
+    margin-top: 68px;
+}
+
+.facebook-background {
+	background: #3b5998;
+}
+
+.google-background {
+	background: #d34836;
+}

@@ -44,39 +44,48 @@
         <!-- Content -->
         <div class="content well well-sm">
             <form role="form">
-                <div class="form-group">
+				<div class="form-group ">
+                    <label for="handedover">Item was handed over to</label>
+                    <select class="form-control" id="handedover">
+                        <option selected>nobody yet</option>
+                        <option>Frank Fass (frankf@gmail.com)</option>
+                        <option>Nora Fraberger (nora72@hotmail.com)</option>
+                    </select>
+                </div>
+				<hr class="hr-or">
+                <div class="form-group top_buffer">
                     <label for="title">Title</label>
-                    <input type="text" class="form-control" id="title" placeholder="Enter title...">
+                    <input type="text" class="form-control" id="title" value="Brown jacket">
                 </div>
                 <div class="form-group">
                     <label for="title">Found on</label>
-                    <input type="date" class="form-control" id="date" value="2016-01-12">
+                    <input type="date" class="form-control" id="date" value="2015-12-14">
                 </div>
                 <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea class="form-control" rows="10" id="description" placeholder="Enter description..."></textarea>
+                    <textarea class="form-control" rows="10" id="description">It is a brown jacket from the brand Powerfix and size 60. It was on the floor near the restrooms. It's probably from a larger gentlemen.</textarea>
                 </div>
                 <div class="form-group">
                     <label for="category">Category</label>
                     <select class="form-control" id="category">
                         <option>Others</option>
                         <option>Phones</option>
-                        <option>Clothing</option>
+                        <option selected>Clothing</option>
                         <option>Accessories</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="picture">Picture</label></br>
-                    <img class="img-responsive img-thumbnail" id="picture" src="thumbs/found_placeholder.png">
+                    <img class="img-responsive img-thumbnail" id="picture" src="thumbs/found_jacket.jpg">
                 </div>
 				<div class="from-group row">
 					<div class="col-xs-12">
-						<button type="button" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-camera"></span>&nbsp;&nbsp;Take a picture</button>
+						<button type="button" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-camera"></span>&nbsp;&nbsp;Take a new picture</button>
 					</div>
 				</div>
 				<div class="row top_buffer">
 					<div class="col-xs-6">
-						<a href="index.html" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Publish</a>
+						<a href="index.html" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Save changes</a>
 					</div>
 				</div>
             </form>

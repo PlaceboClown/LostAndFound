@@ -12,10 +12,9 @@
     <link href="./css/LostAndFound.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="home-background">
     <!-- Header-->
-    <div class="header">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-absolute" role="navigation">
             <div id="divContainer" class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarContent">
@@ -37,23 +36,24 @@
                 </div>
             </div>
         </nav>
-    </div>
+
 
     <div class="container">
         <div id="content">
-            <div class="row top_buffer">
-
+		<div id="home-headline-container">
+			<h3 id="home-headline-main">Lost or found something at the Urban Art Forms Festival?</h3>
+			<h4 id="home-headline-sub">Search through items which were recently found or publish something you found.</h4>
+		</div>
+            <div class="row top_buffer_home">
                 <div class="col-xs-12">
-                    <a href="lost.html" class="btn btn-danger btn-lg btn-block">Lost item</a>
+                    <a href="lost.html" class="btn btn-danger btn-lg btn-block">I lost something</a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 top_buffer">
-                    <a href="found.html" class="btn btn-success btn-lg btn-block">Found item</a>
+                    <a href="found.html" class="btn btn-success btn-lg btn-block">I found something</a>
                 </div>
             </div>
-            <hr/>
-
         </div>
     </div>
     <!-- Bootstrap -->
