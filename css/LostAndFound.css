@@ -101,21 +101,27 @@ a:hover {
 
 /* Primary buttons */
 .btn-primary {
-    background-color: #d61d25;
-    border-color: #fff;
+    background-color: #7695AD;
+    border-color: #577C98;
     color: #fff;
 }
 
 /* Primary button on mouseover */
 .btn-primary:hover {
-    background-color: #a01d23;
+    background-color: #577C98;
 	border-color: #fff !important;
     color: #fff;
 }
 
 /* Primary button on mousedown */
 .btn-primary:active {
-    background-color: #a01d23 !important;
+    background-color: #3C6585 !important;
+    color: #fff;
+}
+
+/* Primary button on focus */
+.btn-primary:focus {
+    background-color: #3C6585 !important;
     color: #fff;
 }
 
@@ -156,9 +162,33 @@ a:hover {
 }
 
 
-.well {
+.well-sm {
 	/* Background color content box */
     background-color: #eee;
+	
+	/* Border of content box */
+    border: 1px solid #999;
+}
+
+.well-lg {
+	/* Background color content box */
+    background-color: #eee;
+	
+	/* Border of content box */
+    border: 1px solid #999;
+}
+
+.well-green{
+	/* Background color content box */
+    background-color: #CCECCC;
+	
+	/* Border of content box */
+    border: 1px solid #999;
+}
+
+.well-red{
+	/* Background color content box */
+    background-color: #FFC4C4;
 	
 	/* Border of content box */
     border: 1px solid #999;
