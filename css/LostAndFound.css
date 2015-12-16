@@ -234,8 +234,11 @@ a:hover {
 
 .facebook-background {
 	background: #3b5998;
+	color: #fff;
 }
 
 .google-background {
 	background: #d34836;
+	border-color: #AF2C1B;
+	color: #fff;
 }
