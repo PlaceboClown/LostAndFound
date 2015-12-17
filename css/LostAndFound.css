@@ -108,6 +108,16 @@ a:hover {
     color: #fff;
 }
 
+.btn-facebook:hover{
+    border-color: #fff !important;
+    color: #fff;
+}
+
+.btn-google:hover{
+    border-color: #fff !important;
+    color: #fff;
+}
+
 /* Primary button on mouseover */
 .btn-primary:hover {
     background-color: #577C98;
