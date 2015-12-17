@@ -73,14 +73,14 @@
                         <ul class="dropdown-menu">
                             <li><a href="#">Latest</a></li>
                             <li><a href="#">Oldest</a></li>
-                            <li><a href="#">Picked items first</a></li>
+                            <li><a href="#">Claimed items first</a></li>
                             <li><a href="#">Available items first</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-
+        <div id="result_info" class="alert alert-info" hidden><Strong>Sorry, no items were found.</Strong></div>
         <!-- Content -->
         <div id="jacket_div" class="content well well-lg">
             <!-- Erster Gegenstand -->
@@ -182,18 +182,11 @@
 
     <script>
         function filterPhones() {
+            document.getElementById('result_info').style.display = 'block';
             document.getElementById('jacket_div').style.display = 'none';
             document.getElementById('wallet_div').style.display = 'none';
             document.getElementById('carkey_div').style.display = 'none';
             document.getElementById('watch_div').style.display = 'none';
-            
-            var alert = document.createElement("DIV");
-            var textnode = document.createTextNode("Sorry, no items were found.");
-            alert.className = "alert alert-info";
-            alert.id = "result_info";
-            alert.appendChild(textnode);
-            document.getElementById('entry_container').appendChild(alert);
-            
         }
 
         function filterOthers() {
