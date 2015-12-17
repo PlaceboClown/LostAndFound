@@ -93,11 +93,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 a {
-    color: #d61d25;
+    color: #577C98;
 }
 
 a:hover {
-    color: #a01d23;
+    color: #3C6585;
 	text-decoration: none !important;
 }
 
@@ -172,8 +172,8 @@ a:hover {
 
 /* Inputs fields when selected */
 .form-control:focus {
-    border: 1px solid #d61d25 !important;
-	box-shadow: 0px 0px 3px #d61d25 !important;
+    border: 1px solid #3C6585 !important;
+	box-shadow: 0px 0px 3px #3C6585 !important;
 }
 
 /* Image borders */
