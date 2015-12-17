@@ -31,7 +31,7 @@
                 </div>
                 <div id="navbarContent" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="my_entries.html">My Entries</a></li>
+                        <li class="active"><a href="my_entries.html">My Entries</a></li>
                         <li class="active"><a href="Profile.html">Change profile</a></li>
                         <li class="active"><a href="login.html">Logout</a></li>
                     </ul>
@@ -40,7 +40,7 @@
         </nav>
     </div>
 
-    <div class="container">
+    <div id="entry_container" class="container">
         <!-- Search & Filter Options -->
         <div class="search well well-sm">
             <div class="row">
@@ -60,10 +60,10 @@
                             Category <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Phones</a></li>
-                            <li><a href="#">Clothing</a></li>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Others</a></li>
+                            <li><a href="#" onclick="filterPhones()">Phones</a></li>
+                            <li><a href="#" onclick="filterClothing()">Clothing</a></li>
+                            <li><a href="#" onclick="filterAccessories()">Accessories</a></li>
+                            <li><a href="#" onclick="filterOthers()">Others</a></li>
                         </ul>
                     </div>
                     <div class="btn-group">
@@ -82,7 +82,7 @@
         </div>
 
         <!-- Content -->
-        <div class="content well well-lg">
+        <div id="jacket_div" class="content well well-lg">
             <!-- Erster Gegenstand -->
             <div class="row">
                 <p class="report_title text-center">Brown jacket</p>
@@ -91,10 +91,11 @@
                 <img class="img-responsive img-thumbnail" src="thumbs/found_jacket.jpg">
             </div>
             <div class="row top_buffer">
-                <span><strong>Found on:</strong> 14.12.2015</span><br>
+                <span><strong>Found on:</strong> 14.12.2015</span>
+                <br>
                 <strong>Available: </strong><span class="glyphicon glyphicon-ok"></span>
             </div>
-			<!--
+            <!--
             <div class="row top_buffer">
                 <span><strong>Description:</strong></span>
                 <p>It is a brown jacket from the brand Powerfix and size 60. It was on the floor near the restrooms. It's probably from a larger gentlemen .</p>
@@ -104,7 +105,7 @@
                 <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Show details
             </a>
         </div>
-        <div class="content well well-lg">
+        <div id="wallet_div" class="content well well-lg">
             <!-- Zweiter Gegenstand -->
             <div class="row">
                 <p class="report_title text-center">Brown wallet</p>
@@ -113,10 +114,11 @@
                 <img class="img-responsive img-thumbnail" src="thumbs/found_wallet.jpg">
             </div>
             <div class="row top_buffer">
-                <span><strong>Found on: </strong> 13.12.2015</span><br>
+                <span><strong>Found on: </strong> 13.12.2015</span>
+                <br>
                 <strong>Available: </strong><span class="glyphicon glyphicon-ok"></span>
             </div>
-			<!--
+            <!--
             <div class="row top_buffer">
                 <span><strong>Description:</strong></span>
                 <p>It is a brown purse with an unknown brand. There were 130 euro cash in it but no id card. I found it near the parking spots.</p>
@@ -126,7 +128,7 @@
                 <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Show details
             </a>
         </div>
-        <div class="content well well-lg">
+        <div id="carkey_div" class="content well well-lg">
             <!-- Dritter Gegenstand -->
             <div class="row">
                 <p class="report_title text-center">Car keys of a Seat</p>
@@ -135,10 +137,11 @@
                 <img class="img-responsive img-thumbnail" src="thumbs/found_carkeys.jpg">
             </div>
             <div class="row top_buffer">
-                <span><strong>Found on:</strong> 13.12.2015</span><br>
+                <span><strong>Found on:</strong> 13.12.2015</span>
+                <br>
                 <strong>Available: </strong><span class="glyphicon glyphicon-ok"></span>
             </div>
-			<!--
+            <!--
             <div class="row top_buffer">
                 <span><strong>Description:</strong></span>
                 <p>This is a car key for a seat. The key was at the exit of the parking lot.</p>
@@ -148,7 +151,7 @@
                 <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Show details
             </a>
         </div>
-        <div class="content well well-lg">
+        <div id="watch_div" class="content well well-lg">
             <!-- Vierter Gegenstand -->
             <div class="row">
                 <p class="report_title text-center">Black watch</p>
@@ -157,10 +160,11 @@
                 <img class="img-responsive img-thumbnail" src="thumbs/found_watch.jpg">
             </div>
             <div class="row top_buffer">
-                <span><strong>Found on:</strong> 13.12.2015</span><br>
+                <span><strong>Found on:</strong> 13.12.2015</span>
+                <br>
                 <strong>Available: </strong><span class="glyphicon glyphicon-remove"></span>
             </div>
-			<!--
+            <!--
             <div class="row top_buffer">
                 <span><strong>Description:</strong></span>
                 <p>It is a black ceramic watch with the brand Diesel.</p>
@@ -175,6 +179,48 @@
     <!-- Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        function filterPhones() {
+            document.getElementById('jacket_div').style.display = 'none';
+            document.getElementById('wallet_div').style.display = 'none';
+            document.getElementById('carkey_div').style.display = 'none';
+            document.getElementById('watch_div').style.display = 'none';
+            
+            var alert = document.createElement("DIV");
+            var textnode = document.createTextNode("Sorry, no items were found.");
+            alert.className = "alert alert-info";
+            alert.id = "result_info";
+            alert.appendChild(textnode);
+            document.getElementById('entry_container').appendChild(alert);
+            
+        }
+
+        function filterOthers() {
+            document.getElementById('result_info').style.display = 'none';
+            document.getElementById('jacket_div').style.display = 'none';
+            document.getElementById('wallet_div').style.display = 'none';
+            document.getElementById('carkey_div').style.display = 'block';
+            document.getElementById('watch_div').style.display = 'none';
+        }
+
+        function filterAccessories() {
+            document.getElementById('result_info').style.display = 'none';
+            document.getElementById('jacket_div').style.display = 'none';
+            document.getElementById('wallet_div').style.display = 'block';
+            document.getElementById('carkey_div').style.display = 'none';
+            document.getElementById('watch_div').style.display = 'block';
+        }
+
+        function filterClothing() {
+            document.getElementById('result_info').style.display = 'none';
+            document.getElementById('jacket_div').style.display = 'block';
+            document.getElementById('wallet_div').style.display = 'none';
+            document.getElementById('carkey_div').style.display = 'none';
+            document.getElementById('watch_div').style.display = 'none';
+        }
+
+    </script>
 </body>
 
 </html>
