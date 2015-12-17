@@ -57,16 +57,18 @@
                 <span><strong>Description:</strong></span>
                 <p>This is a car key for a seat. The key was at the exit of the parking lot.</p>
             </div>
+            <div class="row top_buffer">
+                <button type="button" class="btn btn-success btn-lg btn-block top_buffer" data-toggle="modal" data-target="#claimModal">
+					<span class="glyphicon glyphicon-hand-up"></span>
+					Claim
+				</button>
+			</div>
             <div class="row">
-                <div class="col-xs-6">
-                    <button type="button" class="btn btn-primary btn-block top_buffer" data-toggle="modal" data-target="#claimModal">
-                        <span class="glyphicon glyphicon-hand-up"></span> Claim</button>
-                </div>
-                <div class="col-xs-6">
-                    <button type="button" class="btn btn-primary btn-block top_buffer" data-toggle="modal" data-target="#reportModal">
-                        <span class="glyphicon glyphicon-flag"></span> Report</button>
-                </div>
-            </div>
+				<button type="button" class="btn btn-danger btn-lg btn-block top_buffer" data-toggle="modal" data-target="#reportModal">
+                        <span class="glyphicon glyphicon-flag"></span> Report
+				</button>
+			</div>
+		</div>
 
             <!-- Modal for claiming an item -->
             <div id="claimModal" class="modal fade" role="dialog">
@@ -82,7 +84,7 @@
                             <p>Congratulations! Your contact data was sent to the finder. He will contact you soon!</p>
                         </div>
                         <div class="modal-footer">
-                            <a href="index.html" class="btn btn-primary">Close</a>
+                            <a href="index.html" class="btn btn-primary btn-block btn-lg">Close</a>
                         </div>
                     </div>
 
@@ -116,7 +118,7 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                           <button type="submit" class="btn btn-primary btn-success btn-block" data-dismiss="modal">
+                           <button type="submit" class="btn btn-primary btn-block btn-lg" data-dismiss="modal">
                                <span class="glyphicon glyphicon-send"></span> Send</button>
                         </div>
                     </div>

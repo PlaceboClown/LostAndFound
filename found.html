@@ -46,38 +46,39 @@
             <form role="form">
                 <div class="form-group">
                     <label for="title">Title</label>
-                    <input onfocus="this.value = 'Brown jacket'" type="text" class="form-control" id="title" placeholder="Enter title...">
+                    <input onfocus="this.value = 'Brown jacket'" type="text" class="form-control input-lg" id="title" placeholder="Enter title...">
                 </div>
                 <div class="form-group">
                     <label for="title">Found on</label>
-                    <input type="date" class="form-control" id="date" value="2015-12-14">
+                    <input type="date" class="form-control input-lg" id="date" value="2015-12-14">
                 </div>
                 <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea onfocus="this.value='It is a brown jacket from the brand Powerfix and size 60. It was on the floor near the restrooms. It\'s probably from a larger gentlemen.'" class="form-control" rows="10" id="description" placeholder="Enter description..."></textarea>
+                    <textarea onfocus="this.value='It is a brown jacket from the brand Powerfix and size 60. It was on the floor near the restrooms. It\'s probably from a larger gentlemen.'" class="form-control input-lg" rows="10" id="description" placeholder="Enter description..."></textarea>
                 </div>
                 <div class="form-group">
                     <label for="category">Category</label>
-                    <select class="form-control" id="category">
+                    <select class="form-control input-lg" id="category">
                         <option>Others</option>
                         <option>Phones</option>
                         <option>Clothing</option>
                         <option>Accessories</option>
                     </select>
                 </div>
+				<div class="from-group">
+					
+				</div>
                 <div class="form-group">
                     <label for="picture">Picture</label></br>
-                    <img class="img-responsive img-thumbnail" id="picture" src="thumbs/found_placeholder.png">
+					<div align="center">
+						<div style="display: inline-block; width:300px;">
+							<button type="button" onclick="$('#picture')[0].src = 'thumbs/found_jacket.jpg'" class="btn btn-primary btn-lg btn-block"> <span class="glyphicon glyphicon-camera"></span>&nbsp;&nbsp;Take a picture</button>
+						</div>
+						<img class="img-responsive img-thumbnail top_buffer" id="picture" src="thumbs/found_placeholder.png" style="">
+					</div>
                 </div>
-				<div class="from-group row">
-					<div class="col-xs-12">
-						<button type="button" onclick="$('#picture')[0].src = 'thumbs/found_jacket.jpg'" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-camera"></span>&nbsp;&nbsp;Take a picture</button>
-					</div>
-				</div>
-				<div class="row top_buffer">
-					<div class="col-xs-6">
-						<a href="my_entries.html" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Publish</a>
-					</div>
+				<div class="form-group">
+					<a href="my_entries.html" class="btn btn-success btn-block btn-lg"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Publish</a>
 				</div>
             </form>
         </div>

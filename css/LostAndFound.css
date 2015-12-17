@@ -101,13 +101,6 @@ a:hover {
 	text-decoration: none !important;
 }
 
-/* Primary buttons */
-.btn-primary {
-    background-color: #718EA4;
-    border-color: #577C98;
-    color: #fff;
-}
-
 .btn-facebook:hover{
     border-color: #fff !important;
     color: #fff;
@@ -115,6 +108,13 @@ a:hover {
 
 .btn-google:hover{
     border-color: #fff !important;
+    color: #fff;
+}
+
+/* Primary buttons */
+.btn-primary {
+    background-color: #718EA4;
+    border-color: #577C98;
     color: #fff;
 }
 
@@ -136,6 +136,29 @@ a:hover {
     background-color: #3C6585 !important;
     color: #fff;
 }
+
+.btn-default {
+    background-color: #3C6585;
+    border-color: #fff !important;
+    color: #fff !important;
+}
+
+/* Default button on mouseover */
+.btn-default:hover {
+    background-color: #3C6585;
+	border-color: #577C98 !important;
+}
+
+/* Default button on mousedown */
+.btn-default:active {
+	background-color: #3C6585;
+	border-color: #577C98 !important;
+}
+
+/* Default button on focus */
+.btn-default:focus {
+}
+
 
 /* Login symbols border */
 .input-group-addon {
