@@ -76,6 +76,7 @@ body {
 	font-family:  'Roboto', Arial, Tahoma, Verdana, sans-serif;
     font-weight: 300;
 	min-height: 555px;
+    background-color: #496D89;
 }
 
 body::-webkit-scrollbar {
@@ -102,7 +103,7 @@ a:hover {
 
 /* Primary buttons */
 .btn-primary {
-    background-color: #7695AD;
+    background-color: #718EA4;
     border-color: #577C98;
     color: #fff;
 }
