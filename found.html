@@ -46,15 +46,15 @@
             <form role="form">
                 <div class="form-group">
                     <label for="title">Title</label>
-                    <input type="text" class="form-control" id="title" placeholder="Enter title...">
+                    <input onfocus="this.value = 'Brown jacket'" type="text" class="form-control" id="title" placeholder="Enter title...">
                 </div>
                 <div class="form-group">
                     <label for="title">Found on</label>
-                    <input type="date" class="form-control" id="date" value="2016-01-12">
+                    <input type="date" class="form-control" id="date" value="2015-12-14">
                 </div>
                 <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea class="form-control" rows="10" id="description" placeholder="Enter description..."></textarea>
+                    <textarea onfocus="this.value='It is a brown jacket from the brand Powerfix and size 60. It was on the floor near the restrooms. It\'s probably from a larger gentlemen.'" class="form-control" rows="10" id="description" placeholder="Enter description..."></textarea>
                 </div>
                 <div class="form-group">
                     <label for="category">Category</label>
@@ -71,12 +71,12 @@
                 </div>
 				<div class="from-group row">
 					<div class="col-xs-12">
-						<button type="button" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-camera"></span>&nbsp;&nbsp;Take a picture</button>
+						<button type="button" onclick="$('#picture')[0].src = 'thumbs/found_jacket.jpg'" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-camera"></span>&nbsp;&nbsp;Take a picture</button>
 					</div>
 				</div>
 				<div class="row top_buffer">
 					<div class="col-xs-6">
-						<a href="index.html" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Publish</a>
+						<a href="my_entries.html" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Publish</a>
 					</div>
 				</div>
             </form>
