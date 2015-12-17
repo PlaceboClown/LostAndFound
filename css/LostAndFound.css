@@ -74,9 +74,9 @@
 body {
 	overflow-x: hidden;
 	font-family:  'Roboto', Arial, Tahoma, Verdana, sans-serif;
-    font-weight: 300;
+	font-weight: 300;
 	min-height: 555px;
-    background-color: #496D89;
+	background-color: #577C98;
 }
 
 body::-webkit-scrollbar {
@@ -164,18 +164,18 @@ a:hover {
 
 .well-sm {
 	/* Background color content box */
-    background-color: #eee;
+    background-color: #C1D1DD;
 	
 	/* Border of content box */
-    border: 1px solid #999;
+    border: 1px solid #3C6585;
 }
 
 .well-lg {
 	/* Background color content box */
-    background-color: #eee;
+    background-color: #C1D1DD;
 	
 	/* Border of content box */
-    border: 1px solid #999;
+    border: 1px solid #3C6585;
 }
 
 .well-green{
